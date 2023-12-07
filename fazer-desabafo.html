@@ -40,14 +40,14 @@
                     <label for="titulo" class="texto">
                         Título <span class="campo-obrigatorio">*</span>
                     </label>
-                    <input type="text" name="titulo" id="titulo" class="campos texto" placeholder="Digite um título">
+                    <input type="text" name="titulo" id="titulo" class="campos texto" placeholder="Digite um título" maxlength="50" required>
                     <span class="msg-erro texto" id="msgErroTitulo"></span>
                 </div>
                 <div class="area-campos">
                     <label for="categoria" class="texto">
                         Categoria <span class="campo-obrigatorio">*</span>
                     </label>
-                    <select name="categoria" id="categoria" class="campos texto">
+                    <select name="categoria" id="categoria" class="campos texto" required>
                         <option value="">Selecione uma opção</option>
                         <option value="abuso">Abuso</option>
                         <option value="depressao">Depressão</option>
@@ -61,7 +61,7 @@
                     <label for="desabafo" class="texto">
                         Seu desabafo <span class="campo-obrigatorio">*</span>
                     </label>
-                    <textarea name="desabafo" id="desabafo" class="campos texto" placeholder="Digite seu desabafo"></textarea>
+                    <textarea name="desabafo" id="desabafo" class="campos texto" placeholder="Digite seu desabafo" maxlength="700" required></textarea>
                     <span class="msg-erro texto" id="msgErroDesabafo"></span>
                 </div>
                 <div class="area-campos" id="areaCampoSubmit">
