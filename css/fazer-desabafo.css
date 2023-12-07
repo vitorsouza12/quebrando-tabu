@@ -1,0 +1,85 @@
+/* Conteúdo principal */
+main {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+/* Área de desabafo */
+section {
+    background-color: #fff;
+    width: 25rem;
+    max-width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.area-campos {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.campo-obrigatorio {
+    color: #ff0000;
+}
+
+.campos {
+    display: block;
+    font-size: 1rem;
+    color: inherit;
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #ddd;
+    margin-bottom: .5rem;
+}
+
+.campos:focus {
+    outline: 0;
+}
+
+.msg-erro {
+    display: block;
+    font-size: .9rem;
+    color: #ff0000;
+}
+
+#desabafo {
+    height: 15rem;
+}
+
+#areaCampoSubmit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.btn-submit {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #329dc9;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-submit:hover {
+    background-color: #2a8ab1;
+}
+
+/* Estilos adicionais (JavaScript) */
+.erro {
+    border-color: #ff0000;
+}

@@ -117,6 +117,15 @@ footer {
 }
 
 /* Estilos adicionais (JavaScript) */
+.tema-escuro {
+    color: #fff;
+    background-color: #2f2f2f;
+}
+
+.tema-escuro .link-creditos-img {
+    color: #76d0f3;
+}
+
 .btn-ativo {
     display: block;
 }

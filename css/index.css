@@ -58,6 +58,11 @@ h2 {
     text-decoration: underline;
 }
 
+/* Estilos adicionais (JavaScript) */
+.tema-escuro .link-img-principal {
+    color: #76d0f3;
+}
+
 /* Responsividade */
 
 /* Dispositivos muito pequenos (celulares pequenos, 600px e abaixo) */
