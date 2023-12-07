@@ -1,0 +1,235 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+/* Ícones */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/* Geral */
+* {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    background-color: #eee;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 20rem;
+}
+
+h1 {
+    font-family: 'Salsa', cursive;
+}
+
+/* Navbar */
+#navBar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #45b8e7;
+}
+
+.area-links-nav {
+    display: flex;
+}
+
+.link-nav {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 1.3rem;
+    transition: .5s;
+}
+
+.link-nav:hover {
+    background-color: #206885;
+}
+
+.area-btn-menu {
+    display: none;
+}
+
+/* Conteúdo principal */
+main {
+    min-height: 50vh;
+    margin: 3rem auto 0;
+}
+
+/* Área de acessibilidade */
+.area-acessibilidade {
+    display: flex;
+    gap: .5rem;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.btn-acessibilidade {
+    display: none;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #329dc9;
+    padding: 1.1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-acessibilidade:hover {
+    background-color: #2a8ab1;
+}
+
+#btnExpandir {
+    display: block;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.creditos {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+
+.link-creditos-img {
+    text-decoration: none;
+    color: #206885;
+}
+
+.link-creditos-img:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionais (JavaScript) */
+.btn-ativo {
+    display: block;
+}
+
+/* Responsividade */
+
+/* Dispositivos muito pequenos (celulares pequenos, 600px e abaixo) */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    #navBar.responsiva {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .responsiva .area-links-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #206885;
+        width: 100%;
+    }
+
+    .area-links-nav {
+        display: none;
+    }
+
+    .area-btn-menu {
+        display: block;
+    }
+
+    #btnMenu {
+        display: inline-block;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #fff;
+        padding: .6rem;
+    }
+
+    .area-acessibilidade {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Dispositivos pequenos (celulares grandes e tablets em modo retrato, 600px e acima) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    #navBar.responsiva {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .responsiva .area-links-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #206885;
+        width: 100%;
+    }
+
+    .area-links-nav {
+        display: none;
+    }
+
+    .area-btn-menu {
+        display: block;
+    }
+
+    #btnMenu {
+        display: inline-block;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #fff;
+        padding: .6rem;
+    }
+
+    .area-acessibilidade {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Dispositivos grandes (laptops e desktops, 992px e acima) */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .area-links-nav {
+        display: flex;
+    }
+
+    .area-btn-menu {
+        display: none;
+    }
+
+    .area-acessibilidade {
+        flex-direction: row;
+    }
+}

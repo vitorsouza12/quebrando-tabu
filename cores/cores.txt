@@ -1,0 +1,3 @@
+Cor clara: #46C2F5
+Cor média: #45B8E7
+Cor escura: #329DC9

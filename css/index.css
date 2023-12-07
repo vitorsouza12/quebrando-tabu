@@ -1,0 +1,168 @@
+/* Conteúdo principal */
+main {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+/* Área da introdução */
+section {
+    width: 50%;
+}
+
+h2,
+.subtitulo-principal {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.subtitulo-principal {
+    font-size: 1.4rem;
+}
+
+.area-links-intro {
+    display: flex;
+    gap: 1rem;
+}
+
+.link-intro {
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #46c2f5;
+    padding: 1.1rem 1.3rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.link-intro:hover {
+    background-color: #329bc5;
+}
+
+/* Área da imagem de destaque */
+.area-img-destaque {
+    text-align: center;
+    width: 50%;
+}
+
+.link-img-principal {
+    text-decoration: none;
+    color: #206885;
+}
+
+.link-img-principal:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+
+/* Dispositivos muito pequenos (celulares pequenos, 600px e abaixo) */
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    section {
+        text-align: center;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .subtitulo-principal {
+        font-size: 1.2rem;
+    }
+
+    .area-links-intro {
+        justify-content: center;
+        gap: .7rem;
+    }
+
+    .link-intro {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .area-img-destaque {
+        width: 90%;
+    }
+}
+
+/* Dispositivos pequenos (celulares grandes e tablets em modo retrato, 600px e acima) */
+@media only screen and (min-width: 600px) {
+    main {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    section {
+        text-align: center;
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .subtitulo-principal {
+        font-size: 1.3rem;
+    }
+
+    .area-links-intro {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .link-intro {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .area-img-destaque {
+        width: 70%;
+    }   
+}
+
+/* Dispositivos grandes (laptops e desktops, 992px e acima) */
+@media only screen and (min-width: 992px) {
+    main {
+       flex-direction: row;
+       gap: 0; 
+    }
+
+    section {
+        text-align: left;
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .subtitulo-principal {
+        font-size: 1.4rem;
+    }
+
+    .area-links-intro {
+        justify-content: left;
+    }
+
+    .link-intro {
+        font-size: 1.15rem;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+
+    .area-img-destaque {
+        width: 50%;
+    }
+}
