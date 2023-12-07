@@ -80,6 +80,21 @@ label {
 }
 
 /* Estilos adicionais (JavaScript) */
+.tema-escuro section {
+    background-color: #1f1f1f;
+    border-color: #333;
+}
+
+.tema-escuro h2 {
+    border-color: #333;
+}
+
+.tema-escuro .campos {
+    background-color: #2f2f2f;
+    border-color: #333;
+}
+
+.tema-escuro .erro,
 .erro {
     border-color: #ff0000;
 }

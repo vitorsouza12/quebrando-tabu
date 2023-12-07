@@ -34,20 +34,20 @@
     <main>
         <!-- Área de desabafo -->
         <section>
-            <h2>Faça seu desabafo</h2>
+            <h2 class="texto">Faça seu desabafo</h2>
             <form id="form">
                 <div class="area-campos">
-                    <label for="titulo">
+                    <label for="titulo" class="texto">
                         Título <span class="campo-obrigatorio">*</span>
                     </label>
-                    <input type="text" name="titulo" id="titulo" class="campos" placeholder="Digite um título">
-                    <span class="msg-erro" id="msgErroTitulo"></span>
+                    <input type="text" name="titulo" id="titulo" class="campos texto" placeholder="Digite um título">
+                    <span class="msg-erro texto" id="msgErroTitulo"></span>
                 </div>
                 <div class="area-campos">
-                    <label for="categoria">
+                    <label for="categoria" class="texto">
                         Categoria <span class="campo-obrigatorio">*</span>
                     </label>
-                    <select name="categoria" id="categoria" class="campos">
+                    <select name="categoria" id="categoria" class="campos texto">
                         <option value="">Selecione uma opção</option>
                         <option value="abuso">Abuso</option>
                         <option value="depressao">Depressão</option>
@@ -55,17 +55,17 @@
                         <option value="homofobia">Homofobia</option>
                         <option value="transfobia">Transfobia</option>
                     </select>
-                    <span class="msg-erro" id="msgErroCategoria"></span>
+                    <span class="msg-erro texto" id="msgErroCategoria"></span>
                 </div>
                 <div class="area-campos">
-                    <label for="desabafo">
+                    <label for="desabafo" class="texto">
                         Seu desabafo <span class="campo-obrigatorio">*</span>
                     </label>
-                    <textarea name="desabafo" id="desabafo" class="campos" placeholder="Digite seu desabafo"></textarea>
-                    <span class="msg-erro" id="msgErroDesabafo"></span>
+                    <textarea name="desabafo" id="desabafo" class="campos texto" placeholder="Digite seu desabafo"></textarea>
+                    <span class="msg-erro texto" id="msgErroDesabafo"></span>
                 </div>
                 <div class="area-campos" id="areaCampoSubmit">
-                    <input type="submit" value="Enviar" class="btn-submit">
+                    <input type="submit" value="Enviar" class="btn-submit texto">
                 </div>
             </form>
         </section>
